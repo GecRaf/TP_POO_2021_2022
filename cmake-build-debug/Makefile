@@ -56,10 +56,10 @@ RM = "D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Rafac\OneDrive\Faculdade\3º Ano\1º Semestre\POO\TP_POO_2021_2022"
+CMAKE_SOURCE_DIR = C:\Users\Rafac\Desktop\TP_POO_2021_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Rafac\OneDrive\Faculdade\3º Ano\1º Semestre\POO\TP_POO_2021_2022\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Rafac\Desktop\TP_POO_2021_2022\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rafac\OneDrive\Faculdade\3º Ano\1º Semestre\POO\TP_POO_2021_2022\cmake-build-debug\CMakeFiles" "C:\Users\Rafac\OneDrive\Faculdade\3º Ano\1º Semestre\POO\TP_POO_2021_2022\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rafac\Desktop\TP_POO_2021_2022\cmake-build-debug\CMakeFiles C:\Users\Rafac\Desktop\TP_POO_2021_2022\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Rafac\OneDrive\Faculdade\3º Ano\1º Semestre\POO\TP_POO_2021_2022\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Rafac\Desktop\TP_POO_2021_2022\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ TP_POO_2021_2022/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/build
 .PHONY : TP_POO_2021_2022/fast
 
+config.obj: config.cpp.obj
+.PHONY : config.obj
+
+# target to build an object file
+config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj
+.PHONY : config.cpp.obj
+
+config.i: config.cpp.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/config.cpp.i
+.PHONY : config.cpp.i
+
+config.s: config.cpp.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/config.cpp.s
+.PHONY : config.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TP_POO_2021_2022
+	@echo ... config.obj
+	@echo ... config.i
+	@echo ... config.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

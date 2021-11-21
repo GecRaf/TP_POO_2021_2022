@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Rafac/OneDrive/Faculdade/3º Ano/1º Semestre/POO/TP_POO_2021_2022/main.cpp" "C:/Users/Rafac/OneDrive/Faculdade/3º Ano/1º Semestre/POO/TP_POO_2021_2022/cmake-build-debug/CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj"
+  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.cpp" "C:/Users/Rafac/Desktop/TP_POO_2021_2022/cmake-build-debug/CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj"
+  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/main.cpp" "C:/Users/Rafac/Desktop/TP_POO_2021_2022/cmake-build-debug/CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
