@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.cpp
+config.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
+
 C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
 iostream
 -
@@ -20,15 +24,5 @@ time.h
 stdlib.h
 -
 stdio.h
--
-
-C:/Users/Rafac/Desktop/TP_POO_2021_2022/main.cpp
-iostream
--
-vector
--
-config.h
-C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
-sstream
 -
 

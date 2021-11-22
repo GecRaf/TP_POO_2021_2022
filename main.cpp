@@ -28,9 +28,12 @@ int main() {
     fflush(stdin);
     cout << "COMANDO: " << endl;
     getline(cin, comando);
-    istringstream iss(comando);
+    splitString(comando); // dividir string comando por palavras
 
+    istringstream iss(comando); //comando output
     cout << iss.str() << endl;
+
+    //mostraVector(zonas, nLinhas, nColunas); por implementar meus bros
 
     return 0;
 }

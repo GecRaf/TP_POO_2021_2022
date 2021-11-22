@@ -31,5 +31,7 @@ public:
 };
 
 vector < vector<zona> > iniciaMatriz(int nLinhas, int nColunas);
+void mostraVector(vector < vector<zona> >, int nLinhas, int nColunas);
+void splitString(string &comando);
 
 #endif //TP_POO_2021_2022_CONFIG_H
