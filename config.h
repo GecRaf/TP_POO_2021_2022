@@ -12,10 +12,11 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <fstream>
 
 using namespace std;
 
-class zona{
+class zona {
 private:
     string tipoZona;
     string edificio;
@@ -23,15 +24,22 @@ private:
     int nTrabalhadores;
 public:
     string obtemTipoZona();
+
     void defineZona(string tipoZona);
+
     int obtemTrabalhadores();
+
     void defineTrabalhadores(int nTrabalhadores);
+
     string obtemEdificio();
+
     void defineEdificio(string edificio);
 };
 
-vector < vector<zona> > iniciaMatriz(int nLinhas, int nColunas);
-void mostraVector(vector < vector<zona> >, int nLinhas, int nColunas);
-void splitString(string &comando);
+vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas);
+
+void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas);
+
+void leitorComandos();
 
 #endif //TP_POO_2021_2022_CONFIG_H
