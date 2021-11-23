@@ -1,1 +1,2 @@
 cons minaf 2 2
+cons minaf 2 2

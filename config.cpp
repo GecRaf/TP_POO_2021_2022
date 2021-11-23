@@ -1,5 +1,5 @@
 //
-// Created by Rafac on 21/11/2021.
+// TP_2122_POO || Rafael Couto 2019142454 || Rodrigo Ferreira 2019138331
 //
 
 #include "config.h"
@@ -19,6 +19,7 @@ vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas) {
 
 void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas) {
     vector<vector<zona> > zonas;
+    int nTrabalhadores=0;
     for (int i = 0; i < nLinhas; i++) {
         cout << "\n|";
         for (int j = 0; j < nColunas; j++) {
@@ -28,24 +29,40 @@ void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas) {
         cout << "|";
         for (int k = 0; k < nColunas; k++) {
             if (zonas[i][k].obtemTipoZona() == "")
-                cout << zonas[i][k].obtemTipoZona() << "\t\t|";
+                cout << zonas[i][k].obtemEdificio() << "\t\t|";
             else
-                cout << zonas[i][k].obtemTipoZona() << "\t|";
+                cout << zonas[i][k].obtemEdificio() << "\t|";
         }
-        //tem de levar mais for's para imprimir tipo de Edificio, tipo de trabalhadores e num de trabalhadores
+        cout << "\n";
+        cout << "|";
+        for (int m = 0; m < nColunas; m++) {
+            if (zonas[i][m].obtemTipoZona() == "")
+                cout << zonas[i][m].obtemTipoTrabalhador() << "\t\t|";
+            else
+                cout << zonas[i][m].obtemTipoTrabalhador() << "\t|";
+        }
+
+        cout << "\n";
+        cout << "|";
+        for (int l = 0; l < nColunas; l++) {
+            if (zonas[i][l].obtemTipoZona() == "")
+                cout << zonas[i][l].obtemTrabalhadores() << "\t\t|";
+            else
+                cout << zonas[i][l].obtemTrabalhadores() << "\t|";
+        }
     }
 }
 
-void leitorComandos() {
+void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
     int teste = 0;
     do {
         string comando = "";
         string tipoComando = "";
         int indexComando = 0;
         cout << "COMANDO: " << endl;
-        getline(cin, comando);
+        getline(cin, comando); //prevenir a entrada de lixo
 
-        cout << comando << endl;
+        //cout << comando << endl; verificacao
 
         for (char x: comando) {
             if (x != ' ') {
@@ -95,7 +112,8 @@ void leitorComandos() {
                 cout << "Comando do ficheiro: " << fileCommand << endl;
             }
             ficheiroComandos.close();
-        } else if (tipoComando == "cons") {
+        }
+        else if (tipoComando == "cons") {
             string tipo = "";
             string linha = "";
             string coluna = "";
@@ -108,32 +126,52 @@ void leitorComandos() {
                     break;
                 }
             }
-
-            for (int k = indexComando; k < comando.size(); k++) {
-                if (comando[k] != ' ') {
-                    linha = linha + comando[k];
-                } else {
-                    indexComando = k;
-                    indexComando++;
-                    break;
+            if(tipo == "minaf" || tipo == "minac" || tipo == "central" || tipo == "bat" || tipo == "fund" || tipo == "edx"){
+                for (int k = indexComando; k < comando.size(); k++) {
+                    if (comando[k] != ' ') {
+                        linha = linha + comando[k];
+                    } else {
+                        indexComando = k;
+                        indexComando++;
+                        break;
+                    }
+                }
+                int intLinha = stoi(linha);
+                if(intLinha > nLinhas || intLinha < 0)
+                {
+                    cout << "Linha invalida!" << endl;
+                }
+                else
+                {
+                    for (int l = indexComando; l < comando.size(); l++) {
+                        if (comando[l] != ' ') {
+                            coluna = coluna + comando[l];
+                        } else {
+                            indexComando = l;
+                            indexComando++;
+                            break;
+                        }
+                    }
+                    int intColuna = stoi(coluna);
+                    if(intColuna > nColunas || intColuna < 0)
+                    {
+                        cout << "Coluna invalida!" << endl;
+                    }
+                    else
+                    {
+                        cout << "Tipo: " << tipo << endl;
+                        cout << "Linha: " << intLinha << endl;
+                        cout << "Coluna: " << intColuna << endl;
+                        zonas[intLinha][intColuna].defineEdificio(tipo);
+                    }
                 }
             }
-
-            for (int l = indexComando; l < comando.size(); l++) {
-                if (comando[l] != ' ') {
-                    coluna = coluna + comando[l];
-                } else {
-                    indexComando = l;
-                    indexComando++;
-                    break;
-                }
+            else
+            {
+                cout << "Tipo de edificio invalido!" << endl;
             }
-            int intLinha = stoi(linha);
-            int intColuna = stoi(coluna);
-            cout << "Tipo: " << tipo << endl;
-            cout << "Linha: " << intLinha << endl;
-            cout << "Coluna: " << intColuna << endl;
-        } else if (tipoComando == "liga") {
+        }
+        else if (tipoComando == "liga") {
             string linha = "";
             string coluna = "";
             for (int k = indexComando; k < comando.size(); k++) {
@@ -255,6 +293,7 @@ void leitorComandos() {
         }//falta ver como implementar o outro vende(relativo aos edificios) aqui
         else if (tipoComando == "cont") {
             string tipo = "";
+
             for (int j = indexComando; j < comando.size(); j++) {
                 if (comando[j] != ' ') {
                     tipo = tipo + comando[j];
@@ -264,8 +303,30 @@ void leitorComandos() {
                     break;
                 }
             }
-            cout << "Tipo: " << tipo << endl;
-        } else if (tipoComando == "list") {
+            if(tipo == "oper" || tipo == "len" || tipo == "miner")
+            {
+                int verificaPasto=0;
+                for(int i=0; i<nLinhas; i++)
+                {
+                    for(int j=0; j<nColunas; j++)
+                    {
+                        if(zonas[i][j].obtemTipoZona() == "pas")
+                        {
+                            verificaPasto=1;
+                            zonas[nLinhas][nColunas].defineTrabalhadores(tipo);
+                        }
+                    }
+                }
+                if(verificaPasto == 0){
+                    cout << "Nao ha zonas de pasto disponiveis!" << endl;
+                }
+            }
+            else
+            {
+                cout << "Tipo de trabalhador invalido!" << endl;
+            }
+        }
+        else if (tipoComando == "list") {
             string linha = "";
             string coluna = "";
             for (int k = indexComando; k < comando.size(); k++) {
@@ -287,11 +348,25 @@ void leitorComandos() {
                     break;
                 }
             }
-            int intLinha = stoi(linha);
-            int intColuna = stoi(coluna);
-            cout << "Linha: " << intLinha << endl;
-            cout << "Coluna: " << intColuna << endl;
-        } else if (tipoComando == "next") {
+
+            if(linha == "" || coluna == "")
+            {
+                cout << "Dados globais" << endl;
+            }
+            else
+            {
+                int intLinha = stoi(linha);
+                int intColuna = stoi(coluna);
+                cout << "\n";
+                cout << "Linha: " << intLinha << "\t|\t" << "Coluna: " << intColuna << endl;
+                cout << "\n";
+                cout << "Tipo de zona: " << zonas[intLinha][intColuna].obtemTipoZona() << endl;
+                cout << "Tipo de edificio: " << zonas[intLinha][intColuna].obtemEdificio() << endl;
+                cout << "Numero de trabalhadores: " << zonas[intLinha][intColuna].obtemTrabalhadores() << endl;
+                cout << "\n";
+            }
+        }
+        else if (tipoComando == "next") {
             string nomeFicheiro = "";
             for (int i = indexComando; i < comando.size(); i++) {
                 if (comando[i] != ' ') {
@@ -316,7 +391,8 @@ void leitorComandos() {
                 }
             }
             cout << "Nome gravado: " << nome << endl;
-        } else if (tipoComando == "load") {
+        }
+        else if (tipoComando == "load") {
             string nome = "";
             for (int i = indexComando; i < comando.size(); i++) {
                 if (comando[i] != ' ') {
@@ -328,7 +404,8 @@ void leitorComandos() {
                 }
             }
             cout << "Nome do jogo a executar: " << nome << endl;
-        } else if (tipoComando == "apaga") {
+        }
+        else if (tipoComando == "apaga") {
             string nome = "";
             for (int i = indexComando; i < comando.size(); i++) {
                 if (comando[i] != ' ') {
@@ -340,7 +417,8 @@ void leitorComandos() {
                 }
             }
             cout << "Nome do jogo a eliminar: " << nome << endl;
-        } else if (tipoComando == "config") {
+        }
+        else if (tipoComando == "config") {
             string ficheiro = "";
             for (int i = indexComando; i < comando.size(); i++) {
                 if (comando[i] != ' ') {
@@ -352,7 +430,8 @@ void leitorComandos() {
                 }
             }
             cout << "Ficheiro config: " << ficheiro << endl;
-        } else if (tipoComando == "debcash") {
+        }
+        else if (tipoComando == "debcash") {
             string valor = "";
             for (int k = indexComando; k < comando.size(); k++) {
                 if (comando[k] != ' ') {
@@ -366,7 +445,8 @@ void leitorComandos() {
 
             int intValor = stoi(valor);
             cout << "Valor: " << intValor << endl;
-        } else if (tipoComando == "debed") {
+        }
+        else if (tipoComando == "debed") {
             string tipo = "";
             string linha = "";
             string coluna = "";
@@ -419,16 +499,48 @@ void leitorComandos() {
 
             int intID = stoi(id);
             cout << "ID: " << intID << endl; //será int or string?
-        } else if (tipoComando == "exit") {
+        }
+        else if (tipoComando == "exit") {
             exit(1);
-        } else {
+        }
+        else {
             cout << "Comando invalido!" << endl;
-        }//remove trabalhador com a identificação ID
+        }
     } while (true);
 
 }
 
 string zona::obtemTipoZona() {
+    string tipoZona = "";
+    int randnum;
+
+    srand((unsigned) time(0));
+
+    randnum = 1 + (rand() % 6);
+
+    switch(randnum){
+        case 1:
+            tipoZona="mnt";
+            break;
+        case 2:
+            tipoZona="dsr";
+            break;
+        case 3:
+            tipoZona="pas";
+            break;
+        case 4:
+            tipoZona="flr";
+            break;
+        case 5:
+            tipoZona="pnt";
+            break;
+        case 6:
+            tipoZona="znZ";
+            break;
+        default:
+            cout << "Erro ao atribuir uma zona";
+            break;
+    }
     return tipoZona;
 }
 
@@ -440,8 +552,12 @@ int zona::obtemTrabalhadores() {
     return nTrabalhadores;
 }
 
-void zona::defineTrabalhadores(int nTrabalhadores) {
-    this->nTrabalhadores = nTrabalhadores;
+string zona::obtemTipoTrabalhador(){
+    return tipoTrabalhador;
+}
+
+void zona::defineTrabalhadores(string tipoTrabalhador) {
+    this->tipoTrabalhador = tipoTrabalhador;
 }
 
 string zona::obtemEdificio() {
@@ -449,6 +565,9 @@ string zona::obtemEdificio() {
 }
 
 void zona::defineEdificio(string edificio) {
+    cout << "\n";
+    cout << "Edificio " << edificio << " construido!" << endl;
+    cout << "\n";
     this->edificio = edificio;
 }
 

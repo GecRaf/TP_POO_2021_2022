@@ -1,5 +1,5 @@
 //
-// Created by Rafac on 21/11/2021.
+// TP_2122_POO || Rafael Couto 2019142454 || Rodrigo Ferreira 2019138331
 //
 
 #ifndef TP_POO_2021_2022_CONFIG_H
@@ -21,7 +21,7 @@ private:
     string tipoZona;
     string edificio;
     string tipoTrabalhador;
-    int nTrabalhadores;
+    int nTrabalhadores = 0;
 public:
     string obtemTipoZona();
 
@@ -29,7 +29,9 @@ public:
 
     int obtemTrabalhadores();
 
-    void defineTrabalhadores(int nTrabalhadores);
+    string obtemTipoTrabalhador();
+
+    void defineTrabalhadores(string tipoTrabalhadores);
 
     string obtemEdificio();
 
@@ -40,6 +42,6 @@ vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas);
 
 void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas);
 
-void leitorComandos();
+void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas);
 
 #endif //TP_POO_2021_2022_CONFIG_H
