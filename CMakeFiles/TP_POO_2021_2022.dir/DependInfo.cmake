@@ -4,21 +4,12 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.cpp" "C:/Users/Rafac/Desktop/TP_POO_2021_2022/CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj"
-  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/main.cpp" "C:/Users/Rafac/Desktop/TP_POO_2021_2022/CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.cpp" "CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj" "gcc" "CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj.d"
+  "C:/Users/Rafac/Desktop/TP_POO_2021_2022/main.cpp" "CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj" "gcc" "CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

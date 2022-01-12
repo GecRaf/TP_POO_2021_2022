@@ -2,6 +2,7 @@
 // TP_2122_POO || Rafael Couto 2019142454 || Rodrigo Ferreira 2019138331
 //
 
+#include <iomanip>
 #include "config.h"
 
 vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas) {
@@ -19,38 +20,49 @@ vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas) {
 
 void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas) {
     vector<vector<zona> > zonas;
-    int nTrabalhadores=0;
-    for (int i = 0; i < nLinhas; i++) {
-        cout << "\n|";
-        for (int j = 0; j < nColunas; j++) {
-            cout << zonas[i][j].obtemTipoZona() << "\t|";
+    for(int i = 0; i < nLinhas; i++){
+        for(int j = 0; j < nColunas; j++){
+            cout << "*-------";
+            if(j == (nColunas - 1)){
+                cout <<  "*";
+            }
         }
-        cout << "\n";
-        cout << "|";
-        for (int k = 0; k < nColunas; k++) {
-            if (zonas[i][k].obtemTipoZona() == "")
-                cout << zonas[i][k].obtemEdificio() << "\t\t|";
-            else
-                cout << zonas[i][k].obtemEdificio() << "\t|";
-        }
-        cout << "\n";
-        cout << "|";
-        for (int m = 0; m < nColunas; m++) {
-            if (zonas[i][m].obtemTipoZona() == "")
-                cout << zonas[i][m].obtemTipoTrabalhador() << "\t\t|";
-            else
-                cout << zonas[i][m].obtemTipoTrabalhador() << "\t|";
-        }
+        cout << endl;
+        for(int z = 0; z < 4; z++){
+            for(int k = 0; k < nColunas; k++){
+                if(z == 0) cout << "|" << left << setfill(' ') << setw(7) << zonas[i][k]->getSigla();
+                else if(z == 1){
+                    cout << "|" << left << setfill(' ') << setw(7) << zonas[i][k]->getSiglaEdificio();
+                }
 
-        cout << "\n";
-        cout << "|";
-        for (int l = 0; l < nColunas; l++) {
-            if (zonas[i][l].obtemTipoZona() == "")
-                cout << zonas[i][l].obtemTrabalhadores() << "\t\t|";
-            else
-                cout << zonas[i][l].obtemTrabalhadores() << "\t|";
+                else if(z == 2) cout << "|" << left << setfill(' ') << setw(7) << zonas[i][k]->getSiglaTrabalhadores().substr(0, 6);
+                else if(z == 3) cout << "|" << left << setfill(' ') << setw(7) << zonas[i][k]->getNrTrabalhadores();
+                else cout << "|       ";
+                if(k == (nColunas - 1)){
+                    cout <<  "|";
+                }
+            }
+            cout << endl;
         }
     }
+    for(int j = 0; j < nColunas; j++){
+        cout << "*-------";
+        if(j == (nColunas - 1)){
+            cout <<  "*";
+        }
+    }
+
+    cout << endl;
+    cout << "[DIA " << dia << "]" << endl;
+    cout << "Saldo: " << saldo << " euros" << endl;
+    cout << "Numero de Trabalhadores: " << getNrTrabalhadores() << endl << endl;
+    cout << "Recursos: " << endl;
+    cout << "Vigas de Madeira: " << nrVigasMadeira << endl;
+    cout << "Ferro: " << nrFerro << endl;
+    cout << "Barras de Aco: " << nrBarraDeAco << endl;
+    cout << "Carvao: " << nrCarvao << endl;
+    cout << "Madeira: " << nrMadeira << endl;
+    cout << "Eletricidade: " << nrEletricidade << endl << endl;
 }
 
 void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
