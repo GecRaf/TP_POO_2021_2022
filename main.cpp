@@ -18,8 +18,6 @@ int main() {
     int nLinhas;
     int nColunas;
     string comando;
-    vector<vector<zona*> > zonas;
-
 
     cout << "Bem-vindo ao jogo CPP Island!" << endl;
     cout <<"   _____ _____  _____    _____  _____ _               _   _ _____   " << endl;
@@ -36,11 +34,8 @@ int main() {
     cin >> nColunas;
     cout << "\n";
 
-    zonas = iniciaMatriz(nLinhas, nColunas);
-    mostraVector(zonas, nLinhas, nColunas); //interface visual
-    fflush(stdin);
-    leitorComandos(zonas,nLinhas, nColunas); // lê comandos
-comando
+    Ilha(nLinhas, nColunas);
+
     //istringstream iss(comando); // output
     //cout << iss.str() << endl;
 
