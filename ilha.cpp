@@ -2,6 +2,7 @@
 // TP_2122_POO || Rafael Couto 2019142454 || Rodrigo Ferreira 2019138331
 //
 #include "ilha.h"
+#include "zona.h"
 
 Ilha::Ilha(int linhas, int colunas) {
     nLinhas = linhas;
@@ -131,7 +132,7 @@ void Ilha::leitorComandos() {
             ficheiroComandos.close();
         }
         else if (tipoComando == "cons") {
-            string tipo = "";
+            Edificio* novoEdf = new Central;
             string linha = "";
             string coluna = "";
             for (int j = indexComando; j < comando.size(); j++) {
@@ -179,7 +180,7 @@ void Ilha::leitorComandos() {
                         cout << "Tipo: " << tipo << endl;
                         cout << "Linha: " << intLinha << endl;
                         cout << "Coluna: " << intColuna << endl;
-                        zonas[intLinha][intColuna]->defineEdificio(tipo);
+                        zonas[intLinha][intColuna]->defineEdificio(edificio->tipo);
                     }
                 }
             }
