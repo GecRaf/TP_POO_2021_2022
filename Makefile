@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Rafac\Desktop\TP_POO_2021_2022
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -152,6 +152,54 @@ config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+edificio.obj: edificio.cpp.obj
+.PHONY : edificio.obj
+
+# target to build an object file
+edificio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj
+.PHONY : edificio.cpp.obj
+
+edificio.i: edificio.cpp.i
+.PHONY : edificio.i
+
+# target to preprocess a source file
+edificio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.i
+.PHONY : edificio.cpp.i
+
+edificio.s: edificio.cpp.s
+.PHONY : edificio.s
+
+# target to generate assembly for a file
+edificio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.s
+.PHONY : edificio.cpp.s
+
+ilha.obj: ilha.cpp.obj
+.PHONY : ilha.obj
+
+# target to build an object file
+ilha.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj
+.PHONY : ilha.cpp.obj
+
+ilha.i: ilha.cpp.i
+.PHONY : ilha.i
+
+# target to preprocess a source file
+ilha.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.i
+.PHONY : ilha.cpp.i
+
+ilha.s: ilha.cpp.s
+.PHONY : ilha.s
+
+# target to generate assembly for a file
+ilha.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.s
+.PHONY : ilha.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -176,6 +224,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+trabalhador.obj: trabalhador.cpp.obj
+.PHONY : trabalhador.obj
+
+# target to build an object file
+trabalhador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj
+.PHONY : trabalhador.cpp.obj
+
+trabalhador.i: trabalhador.cpp.i
+.PHONY : trabalhador.i
+
+# target to preprocess a source file
+trabalhador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.i
+.PHONY : trabalhador.cpp.i
+
+trabalhador.s: trabalhador.cpp.s
+.PHONY : trabalhador.s
+
+# target to generate assembly for a file
+trabalhador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.s
+.PHONY : trabalhador.cpp.s
+
+zona.obj: zona.cpp.obj
+.PHONY : zona.obj
+
+# target to build an object file
+zona.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj
+.PHONY : zona.cpp.obj
+
+zona.i: zona.cpp.i
+.PHONY : zona.i
+
+# target to preprocess a source file
+zona.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.i
+.PHONY : zona.cpp.i
+
+zona.s: zona.cpp.s
+.PHONY : zona.s
+
+# target to generate assembly for a file
+zona.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP_POO_2021_2022.dir\build.make CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.s
+.PHONY : zona.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +284,21 @@ help:
 	@echo ... config.obj
 	@echo ... config.i
 	@echo ... config.s
+	@echo ... edificio.obj
+	@echo ... edificio.i
+	@echo ... edificio.s
+	@echo ... ilha.obj
+	@echo ... ilha.i
+	@echo ... ilha.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... trabalhador.obj
+	@echo ... trabalhador.i
+	@echo ... trabalhador.s
+	@echo ... zona.obj
+	@echo ... zona.i
+	@echo ... zona.s
 .PHONY : help
 
 

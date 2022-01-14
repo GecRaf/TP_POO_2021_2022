@@ -3,57 +3,10 @@
 //
 
 #include "config.h"
+#include "ilha.h"
+#include "zona.h"
 
-vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas) {
-    zona z;
-    vector<vector<zona> > zonas;
-    vector<zona> tmp;
-    for (int i = 0; i < nLinhas; i++) {
-        for (int j = 0; j < nColunas; j++) {
-            tmp.push_back(z);
-        }
-        zonas.push_back(tmp);
-    }
-    return zonas;
-}
-
-void mostraVector(vector<vector<zona> >, int nLinhas, int nColunas) {
-    vector<vector<zona> > zonas;
-    int nTrabalhadores=0;
-    for (int i = 0; i < nLinhas; i++) {
-        cout << "\n|";
-        for (int j = 0; j < nColunas; j++) {
-            cout << zonas[i][j].obtemTipoZona() << "\t|";
-        }
-        cout << "\n";
-        cout << "|";
-        for (int k = 0; k < nColunas; k++) {
-            if (zonas[i][k].obtemTipoZona() == "")
-                cout << zonas[i][k].obtemEdificio() << "\t\t|";
-            else
-                cout << zonas[i][k].obtemEdificio() << "\t|";
-        }
-        cout << "\n";
-        cout << "|";
-        for (int m = 0; m < nColunas; m++) {
-            if (zonas[i][m].obtemTipoZona() == "")
-                cout << zonas[i][m].obtemTipoTrabalhador() << "\t\t|";
-            else
-                cout << zonas[i][m].obtemTipoTrabalhador() << "\t|";
-        }
-
-        cout << "\n";
-        cout << "|";
-        for (int l = 0; l < nColunas; l++) {
-            if (zonas[i][l].obtemTipoZona() == "")
-                cout << zonas[i][l].obtemTrabalhadores() << "\t\t|";
-            else
-                cout << zonas[i][l].obtemTrabalhadores() << "\t|";
-        }
-    }
-}
-
-void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
+void leitorComandos(vector<vector<zona*> > zonas, int nLinhas, int nColunas) {
     int teste = 0;
     do {
         string comando = "";
@@ -162,7 +115,7 @@ void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
                         cout << "Tipo: " << tipo << endl;
                         cout << "Linha: " << intLinha << endl;
                         cout << "Coluna: " << intColuna << endl;
-                        zonas[intLinha][intColuna].defineEdificio(tipo);
+                        zonas[intLinha][intColuna]->defineEdificio(tipo);
                     }
                 }
             }
@@ -310,10 +263,10 @@ void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
                 {
                     for(int j=0; j<nColunas; j++)
                     {
-                        if(zonas[i][j].obtemTipoZona() == "pas")
+                        if(zonas[i][j]->obtemTipoZona() == "pas")
                         {
                             verificaPasto=1;
-                            zonas[nLinhas][nColunas].defineTrabalhadores(tipo);
+                            zonas[nLinhas][nColunas]->defineTrabalhadores(tipo);
                         }
                     }
                 }
@@ -360,9 +313,9 @@ void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
                 cout << "\n";
                 cout << "Linha: " << intLinha << "\t|\t" << "Coluna: " << intColuna << endl;
                 cout << "\n";
-                cout << "Tipo de zona: " << zonas[intLinha][intColuna].obtemTipoZona() << endl;
-                cout << "Tipo de edificio: " << zonas[intLinha][intColuna].obtemEdificio() << endl;
-                cout << "Numero de trabalhadores: " << zonas[intLinha][intColuna].obtemTrabalhadores() << endl;
+                cout << "Tipo de zona: " << zonas[intLinha][intColuna]->obtemTipoZona() << endl;
+                cout << "Tipo de edificio: " << zonas[intLinha][intColuna]->obtemEdificio() << endl;
+                cout << "Numero de trabalhadores: " << zonas[intLinha][intColuna]->obtemTrabalhadores() << endl;
                 cout << "\n";
             }
         }
@@ -510,64 +463,4 @@ void leitorComandos(vector<vector<zona> > zonas, int nLinhas, int nColunas) {
 
 }
 
-string zona::obtemTipoZona() {
-    string tipoZona = "";
-    int randnum;
-
-    srand((unsigned) time(0));
-
-    randnum = 1 + (rand() % 6);
-
-    switch(randnum){
-        case 1:
-            tipoZona="mnt";
-            break;
-        case 2:
-            tipoZona="dsr";
-            break;
-        case 3:
-            tipoZona="pas";
-            break;
-        case 4:
-            tipoZona="flr";
-            break;
-        case 5:
-            tipoZona="pnt";
-            break;
-        case 6:
-            tipoZona="znZ";
-            break;
-        default:
-            cout << "Erro ao atribuir uma zona";
-            break;
-    }
-    return tipoZona;
-}
-
-void zona::defineZona(string tipoZona) {
-    this->tipoZona = tipoZona;
-}
-
-int zona::obtemTrabalhadores() {
-    return nTrabalhadores;
-}
-
-string zona::obtemTipoTrabalhador(){
-    return tipoTrabalhador;
-}
-
-void zona::defineTrabalhadores(string tipoTrabalhador) {
-    this->tipoTrabalhador = tipoTrabalhador;
-}
-
-string zona::obtemEdificio() {
-    return edificio;
-}
-
-void zona::defineEdificio(string edificio) {
-    cout << "\n";
-    cout << "Edificio " << edificio << " construido!" << endl;
-    cout << "\n";
-    this->edificio = edificio;
-}
 

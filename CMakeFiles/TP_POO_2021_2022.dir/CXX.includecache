@@ -9,8 +9,32 @@
 C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.cpp
 config.h
 C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
+ilha.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/ilha.h
+zona.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.h
 
 C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
+
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/ilha.cpp
+ilha.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/ilha.h
+
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/ilha.h
+zona.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.h
+
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/main.cpp
+config.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/config.h
+zona.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.h
+
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.cpp
+zona.h
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.h
+
+C:/Users/Rafac/Desktop/TP_POO_2021_2022/zona.h
 iostream
 -
 string
@@ -26,5 +50,7 @@ stdlib.h
 stdio.h
 -
 fstream
+-
+iomanip
 -
 

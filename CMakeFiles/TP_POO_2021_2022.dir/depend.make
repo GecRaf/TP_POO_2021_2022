@@ -3,7 +3,21 @@
 
 CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj: \
  config.cpp \
- config.h
+ config.h \
+ ilha.h \
+ zona.h
+CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj: \
+ edificio.cpp
+CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj: \
+ ilha.cpp \
+ ilha.h \
+ zona.h
 CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj: \
  config.h \
- main.cpp
+ main.cpp \
+ zona.h
+CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj: \
+ trabalhador.cpp
+CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj: \
+ zona.cpp \
+ zona.h

@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,44 +68,104 @@ include CMakeFiles/TP_POO_2021_2022.dir/flags.make
 CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
 CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj: main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\main.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\main.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp
 
 CMakeFiles/TP_POO_2021_2022.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp > CMakeFiles\TP_POO_2021_2022.dir\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp > CMakeFiles\TP_POO_2021_2022.dir\main.cpp.i
 
 CMakeFiles/TP_POO_2021_2022.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp -o CMakeFiles\TP_POO_2021_2022.dir\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\main.cpp -o CMakeFiles\TP_POO_2021_2022.dir\main.cpp.s
 
 CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
 CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj: config.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\config.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\config.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp
 
 CMakeFiles/TP_POO_2021_2022.dir/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/config.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp > CMakeFiles\TP_POO_2021_2022.dir\config.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp > CMakeFiles\TP_POO_2021_2022.dir\config.cpp.i
 
 CMakeFiles/TP_POO_2021_2022.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/config.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp -o CMakeFiles\TP_POO_2021_2022.dir\config.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\config.cpp -o CMakeFiles\TP_POO_2021_2022.dir\config.cpp.s
+
+CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
+CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj: ilha.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\ilha.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\ilha.cpp
+
+CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\ilha.cpp > CMakeFiles\TP_POO_2021_2022.dir\ilha.cpp.i
+
+CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\ilha.cpp -o CMakeFiles\TP_POO_2021_2022.dir\ilha.cpp.s
+
+CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
+CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj: edificio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\edificio.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\edificio.cpp
+
+CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\edificio.cpp > CMakeFiles\TP_POO_2021_2022.dir\edificio.cpp.i
+
+CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\edificio.cpp -o CMakeFiles\TP_POO_2021_2022.dir\edificio.cpp.s
+
+CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
+CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj: zona.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\zona.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\zona.cpp
+
+CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\zona.cpp > CMakeFiles\TP_POO_2021_2022.dir\zona.cpp.i
+
+CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\zona.cpp -o CMakeFiles\TP_POO_2021_2022.dir\zona.cpp.s
+
+CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj: CMakeFiles/TP_POO_2021_2022.dir/flags.make
+CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj: trabalhador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TP_POO_2021_2022.dir\trabalhador.cpp.obj -c C:\Users\Rafac\Desktop\TP_POO_2021_2022\trabalhador.cpp
+
+CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rafac\Desktop\TP_POO_2021_2022\trabalhador.cpp > CMakeFiles\TP_POO_2021_2022.dir\trabalhador.cpp.i
+
+CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rafac\Desktop\TP_POO_2021_2022\trabalhador.cpp -o CMakeFiles\TP_POO_2021_2022.dir\trabalhador.cpp.s
 
 # Object files for target TP_POO_2021_2022
 TP_POO_2021_2022_OBJECTS = \
 "CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj" \
-"CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj"
+"CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj" \
+"CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj" \
+"CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj" \
+"CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj" \
+"CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj"
 
 # External object files for target TP_POO_2021_2022
 TP_POO_2021_2022_EXTERNAL_OBJECTS =
 
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/main.cpp.obj
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/config.cpp.obj
+TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/ilha.cpp.obj
+TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/edificio.cpp.obj
+TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/zona.cpp.obj
+TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/trabalhador.cpp.obj
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/build.make
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/linklibs.rsp
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/objects1.rsp
 TP_POO_2021_2022.exe: CMakeFiles/TP_POO_2021_2022.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TP_POO_2021_2022.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rafac\Desktop\TP_POO_2021_2022\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TP_POO_2021_2022.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TP_POO_2021_2022.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
