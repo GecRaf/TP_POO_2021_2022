@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ToolSet: w64 10.0 (local)@C:\msys64\mingw64
+=======
+ToolSet: w64 9.0 (local)@D:\Program Files\JetBrains\CLion 2021.3\bin\mingw
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 Options: 
 
 Options:

@@ -11,10 +11,17 @@
 				<Option working_dir="C:/Users/Rafac/Desktop/TP_POO_2021_2022"/>
 				<Option type="4"/>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 all"/>
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+=======
+					<Build command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 				</MakeCommands>
 			</Target>
 			<Target title="TP_POO_2021_2022">
@@ -24,6 +31,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
@@ -37,6 +45,21 @@
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+=======
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 TP_POO_2021_2022"/>
+					<CompileFile command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 				</MakeCommands>
 			</Target>
 			<Target title="TP_POO_2021_2022/fast">
@@ -46,6 +69,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
@@ -59,26 +83,55 @@
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+=======
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 TP_POO_2021_2022/fast"/>
+					<CompileFile command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/Rafac/Desktop/TP_POO_2021_2022"/>
 				<Option type="4"/>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+=======
+					<Build command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/Rafac/Desktop/TP_POO_2021_2022"/>
 				<Option type="4"/>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+=======
+					<Build command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Rafac/Desktop/TP_POO_2021_2022/Makefile&quot;  VERBOSE=1 clean"/>
+>>>>>>> 667e938e5828d2e88495747a7b9d424f93b0c65a
 				</MakeCommands>
 			</Target>
 		</Build>
