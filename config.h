@@ -6,6 +6,4 @@
 #ifndef TP_POO_2021_2022_CONFIG_H
 #define TP_POO_2021_2022_CONFIG_H
 
-
-
 #endif //TP_POO_2021_2022_CONFIG_H
