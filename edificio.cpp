@@ -4,4 +4,17 @@
 
 #include "edificio.h"
 
+string Edificio::obtemTipo()
+{
+    return tipo;
+};
 
+void Edificio::defineTipo()
+{
+    this->tipo = tipo;
+}
+
+bool Edificio::obtemActive()
+{
+    return active;
+};

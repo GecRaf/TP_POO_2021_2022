@@ -23,7 +23,14 @@ class Trabalhador{
         string tipo;
         int id; // exemplo: 15.7 (15º trabalhador registado no 7º dia)
     public:
-        void share_id();
+
+        int obtemPagamento();
+
+        string obtemTipoTrabalhador();
+
+        int obtemID();
+
+        void defineTrabalhador();
 };
 
 #endif //TP_POO_2021_2022_TRABALHADOR_H

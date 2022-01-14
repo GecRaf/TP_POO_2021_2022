@@ -4,8 +4,6 @@
 
 #include "zona.h"
 
-
-
 string zona::obtemTipoZona() {
     string tipoZona = "";
     int randnum;
@@ -48,19 +46,19 @@ int zona::obtemTrabalhadores() {
     return nTrabalhadores;
 }
 
-string zona::obtemTipoTrabalhador(){
-    return tipoTrabalhador;
+vector<Trabalhador*> zona::obtemTipoTrabalhador(){
+    return this->trabalhadores;
 }
 
-void zona::defineTrabalhadores(string tipoTrabalhador) {
-    this->tipoTrabalhador = tipoTrabalhador;
+void zona::defineTrabalhadores(vector<Trabalhador*> trabalhadores) {
+    this->trabalhadores = trabalhadores;
 }
 
-string zona::obtemEdificio() {
-    return edificio;
+Edificio* zona::obtemEdificio() {
+    return this->edificio;
 }
 
-void zona::defineEdificio(string edificio) {
+void zona::defineEdificio(Edificio* edificio) {
     cout << "\n";
     cout << "Edificio " << edificio << " construido!" << endl;
     cout << "\n";

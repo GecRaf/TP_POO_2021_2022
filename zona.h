@@ -15,14 +15,17 @@
 #include <fstream>
 #include <iomanip>
 
+#include <trabalhador.h>
+#include <edificio.h>
+
 using namespace std;
 
 class zona {
 private:
     string tipoZona;
-    string edificio;
-    string tipoTrabalhador;
     int nTrabalhadores = 0;
+    vector<Trabalhador*> trabalhadores;
+    Edificio* edificio;
 public:
     string obtemTipoZona();
 
@@ -30,13 +33,13 @@ public:
 
     int obtemTrabalhadores();
 
-    string obtemTipoTrabalhador();
+    vector<Trabalhador*> obtemTipoTrabalhador();
 
-    void defineTrabalhadores(string tipoTrabalhadores);
+    void defineTrabalhadores(vector<Trabalhador*> trabalhadores);
 
-    string obtemEdificio();
+    Edificio* obtemEdificio();
 
-    void defineEdificio(string edificio);
+    void defineEdificio(Edificio* edificio);
 };
 
 vector<vector<zona> > iniciaMatriz(int nLinhas, int nColunas);

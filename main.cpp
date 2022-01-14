@@ -19,20 +19,20 @@ int main() {
     int nColunas;
     string comando;
 
-    cout << "Bem-vindo ao jogo CPP Island!" << endl;
+    cout <<"Bem-vindo ao jogo CPP Island!" << endl;
     cout <<"   _____ _____  _____    _____  _____ _               _   _ _____   " << endl;
     cout <<"  / ____|  __ \\|  __ \\  |_   _|/ ____| |        /\\   | \\ | |  __ \\  " << endl;
     cout <<" | |    | |__) | |__) |   | | | (___ | |       /  \\  |  \\|   " << endl;
     cout <<" | |    |  ___/|  ___/    | |  \\___ \\| |      / /\\ \\ | . ` | |  | | " << endl;
     cout <<" | |____| |    | |       _| |_ ____) | |____ / ____ \\| |\\  | |__| | " << endl;
     cout <<"  \\_____|_|    |_|      |_____|_____/|______/_/    \\_\\_| \\_|_____/  " << endl;
-    cout << "\n";
-    cout << "Introduza o numero de linhas: ";
+    cout <<"\n";
+    cout <<"Introduza o numero de linhas: ";
     cin >> nLinhas;
-    cout << "\n";
-    cout << "Introduza o numero de colunas: ";
+    cout <<"\n";
+    cout <<"Introduza o numero de colunas: ";
     cin >> nColunas;
-    cout << "\n";
+    cout <<"\n";
 
     Ilha(nLinhas, nColunas);
 

@@ -19,7 +19,14 @@ using namespace std;
 
 class Edificio{
     private:
+        string tipo;
+        bool active = false;
+    public:
+        string obtemTipo();
 
+        void defineTipo();
+
+        bool obtemActive();
 };
 
 
