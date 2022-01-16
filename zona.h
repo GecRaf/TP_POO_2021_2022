@@ -15,8 +15,8 @@
 #include <fstream>
 #include <iomanip>
 
-#include <trabalhador.h>
-#include <edificio.h>
+#include "trabalhador.h"
+#include "edificio.h"
 
 using namespace std;
 

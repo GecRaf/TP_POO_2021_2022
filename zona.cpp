@@ -60,9 +60,7 @@ Edificio* zona::obtemEdificio() {
 
 void zona::defineEdificio(Edificio* edificio) {
     cout << "\n";
-    cout << "Edificio " << edificio << " construido!" << endl;
+    cout << "Edificio " << edificio->obtemTipo() << " construido!" << endl;
     cout << "\n";
     this->edificio = edificio;
 }
-
-

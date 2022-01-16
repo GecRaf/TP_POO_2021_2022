@@ -12,9 +12,17 @@ string Edificio::obtemTipo()
 void Edificio::defineTipo()
 {
     this->tipo = tipo;
-}
+};
 
 bool Edificio::obtemActive()
 {
     return active;
+};
+
+Edificio::Edificio(string tipo){
+    this->tipo = tipo;
+};
+
+Edificio::~Edificio(){
+
 };

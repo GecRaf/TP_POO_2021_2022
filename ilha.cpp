@@ -9,6 +9,7 @@ Ilha::Ilha(int linhas, int colunas) {
     nColunas = colunas;
     iniciaMatriz(nLinhas, nColunas);
     mostraVector();
+    leitorComandos();
 }
 
 void Ilha::iniciaMatriz(int nLinhas, int nColunas) {
@@ -80,7 +81,7 @@ void Ilha::leitorComandos() {
         cout << "COMANDO: " << endl;
         getline(cin, comando); //prevenir a entrada de lixo
 
-        //cout << comando << endl; verificacao
+        cout << comando << endl; //verificacao
 
         for (char x: comando) {
             if (x != ' ') {
@@ -132,12 +133,12 @@ void Ilha::leitorComandos() {
             ficheiroComandos.close();
         }
         else if (tipoComando == "cons") {
-            Edificio* novoEdf = new Central;
             string linha = "";
             string coluna = "";
+            string tipo = "";
             for (int j = indexComando; j < comando.size(); j++) {
                 if (comando[j] != ' ') {
-                    tipo = tipo + comando[j];
+                    tipo = tipo  + comando[j];
                 } else {
                     indexComando = j;
                     indexComando++;
@@ -180,7 +181,10 @@ void Ilha::leitorComandos() {
                         cout << "Tipo: " << tipo << endl;
                         cout << "Linha: " << intLinha << endl;
                         cout << "Coluna: " << intColuna << endl;
-                        zonas[intLinha][intColuna]->defineEdificio(edificio->tipo);
+                        cout << zonas[intLinha][intColuna]->obtemTipoZona() << endl;
+                        //Edificio* edificio = new Edificio(tipo);
+                        zonas[intLinha][intColuna]->defineEdificio(new Edificio(tipo));
+                        //cout << zonas[intLinha][intColuna]->obtemEdificio()->obtemTipo() << endl;
                     }
                 }
             }
@@ -331,7 +335,7 @@ void Ilha::leitorComandos() {
                         if(zonas[i][j]->obtemTipoZona() == "pas")
                         {
                             verificaPasto=1;
-                            zonas[nLinhas][nColunas]->defineTrabalhadores(tipo);
+                            //zonas[nLinhas][nColunas]->defineTrabalhadores(tipo);
                         }
                     }
                 }

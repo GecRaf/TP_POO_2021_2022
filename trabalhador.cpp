@@ -7,19 +7,19 @@
 int Trabalhador::obtemPagamento()
 {
     return pagamento;
-}
+};
 
 string Trabalhador::obtemTipoTrabalhador()
 {
     return tipo;
-}
+};
 
 void Trabalhador::defineTrabalhador()
 {
     this->tipo = tipo;
-}
+};
 
 int Trabalhador::obtemID()
 {
     return id;
-}
+};

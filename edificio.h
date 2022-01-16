@@ -27,6 +27,10 @@ class Edificio{
         void defineTipo();
 
         bool obtemActive();
+
+        Edificio(string tipo);
+
+        ~Edificio();
 };
 
 
