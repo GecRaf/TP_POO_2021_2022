@@ -28,11 +28,18 @@ class Edificio{
 
         bool obtemActive();
 
+        void ligaActive();
+
+        void desligaActive();
+
         Edificio(string tipo);
 
         ~Edificio();
+
 };
 
 
 
 #endif //TP_POO_2021_2022_EDIFICIO_H
+
+//zonas[intLinha][intColuna]->defineEdificio(new Edificio(tipo));

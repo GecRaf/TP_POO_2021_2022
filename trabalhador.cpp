@@ -23,3 +23,11 @@ int Trabalhador::obtemID()
 {
     return id;
 };
+
+Trabalhador::Trabalhador(string tipo){
+    this->tipo = tipo;
+};
+
+Trabalhador::~Trabalhador(){
+
+};

@@ -37,13 +37,13 @@ void Ilha::mostraVector() {
         cout << endl;
         for(int z = 0; z < 4; z++){
             for(int k = 0; k < nColunas; k++){
-                if(z == 0) cout << "|       ";
+                if(z == 0) cout << "|       " ;//<< zonas[i][k]->obtemTipoZona();
                 else if(z == 1){
-                    cout << "|       ";
+                    cout << "|       " ;//<< zonas[i][k]->obtemEdificio();
                 }
 
-                else if(z == 2) cout << "|       ";
-                else if(z == 3) cout << "|       ";
+                else if(z == 2) cout << "|       " ;//<< zonas[i][k]->obtemTipoTrabalhador();
+                else if(z == 3) cout << "|       " ;//<< zonas[i][k]->obtemTrabalhadores();
                 else cout << "|       ";
                 if(k == (nColunas - 1)){
                     cout <<  "|";
@@ -58,21 +58,11 @@ void Ilha::mostraVector() {
             cout <<  ".";
         }
     }
-
-    /*cout << endl;
-    cout << "[DIA " << dia << "]" << endl;
-    cout << "Saldo: " << saldo << " euros" << endl;
-    cout << "Numero de Trabalhadores: " << getNrTrabalhadores() << endl << endl;
-    cout << "Recursos: " << endl;
-    cout << "Vigas de Madeira: " << nrVigasMadeira << endl;
-    cout << "Ferro: " << nrFerro << endl;
-    cout << "Barras de Aco: " << nrBarraDeAco << endl;
-    cout << "Carvao: " << nrCarvao << endl;
-    cout << "Madeira: " << nrMadeira << endl;
-    cout << "Eletricidade: " << nrEletricidade << endl << endl;*/
+    cout << endl;
 }
 
 void Ilha::leitorComandos() {
+    fflush(stdin);
     int teste = 0;
     do {
         string comando = "";
@@ -81,7 +71,7 @@ void Ilha::leitorComandos() {
         cout << "COMANDO: " << endl;
         getline(cin, comando); //prevenir a entrada de lixo
 
-        cout << comando << endl; //verificacao
+        //cout << comando << endl; //verificacao
 
         for (char x: comando) {
             if (x != ' ') {
@@ -181,10 +171,7 @@ void Ilha::leitorComandos() {
                         cout << "Tipo: " << tipo << endl;
                         cout << "Linha: " << intLinha << endl;
                         cout << "Coluna: " << intColuna << endl;
-                        cout << zonas[intLinha][intColuna]->obtemTipoZona() << endl;
-                        //Edificio* edificio = new Edificio(tipo);
                         zonas[intLinha][intColuna]->defineEdificio(new Edificio(tipo));
-                        //cout << zonas[intLinha][intColuna]->obtemEdificio()->obtemTipo() << endl;
                     }
                 }
             }
@@ -218,7 +205,7 @@ void Ilha::leitorComandos() {
                 int intColuna = stoi(coluna);
                 cout << "Linha: " << intLinha << endl;
                 cout << "Coluna: " << intColuna << endl;
-                //falta função que liga o edificio
+                zonas[intLinha][intColuna]->obtemEdificio()->ligaActive();
             }
         } else if (tipoComando == "des") {
             string linha = "";
@@ -245,7 +232,7 @@ void Ilha::leitorComandos() {
                 int intColuna = stoi(coluna);
                 cout << "Linha: " << intLinha << endl;
                 cout << "Coluna: " << intColuna << endl;
-                //falta função que desliga o edificio
+                zonas[intLinha][intColuna]->obtemEdificio()->desligaActive();
             }
         } else if (tipoComando == "move") {
             string id = "";
@@ -335,6 +322,7 @@ void Ilha::leitorComandos() {
                         if(zonas[i][j]->obtemTipoZona() == "pas")
                         {
                             verificaPasto=1;
+                            //zonas[nLinhas][nColunas]->defineTrabalhadores(Trabalhador(tipo));
                             //zonas[nLinhas][nColunas]->defineTrabalhadores(tipo);
                         }
                     }

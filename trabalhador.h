@@ -33,7 +33,11 @@ class Trabalhador{
 
         void defineTrabalhador();
 
-        void obtemDiaContrato();  
+        void obtemDiaContrato();
+
+        Trabalhador(string tipo);
+
+        ~Trabalhador();
 };
 
 class Operario : public Trabalhador{

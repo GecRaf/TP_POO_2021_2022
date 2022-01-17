@@ -35,7 +35,8 @@ string zona::obtemTipoZona() {
             cout << "Erro ao atribuir uma zona";
             break;
     }
-    return tipoZona;
+    zona::defineZona(tipoZona);
+    return this->tipoZona;
 }
 
 void zona::defineZona(string tipoZona) {

@@ -19,6 +19,14 @@ bool Edificio::obtemActive()
     return active;
 };
 
+void Edificio::ligaActive(){
+    this->active = true;
+};
+
+void Edificio::desligaActive(){
+    this->active = false;
+};
+
 Edificio::Edificio(string tipo){
     this->tipo = tipo;
 };
